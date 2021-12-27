@@ -1,12 +1,12 @@
 {
-  "name": "example-bot",
+  "name": "typescript-chan",
   "version": "1.0.0",
   "description": "Example of discord bot",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn ./src/index.ts",
     "start": "ts-node ./src/index.ts",
-    "start:prod": "npm run build && node ./dist/index.js",
+    "start:prod": "npm i && npm run build && node ./dist/index.js",
     "build": "npx tsc"
   },
   "keywords": [

@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  node:
+    image: 'node:latest'
+    user: 'node'
+
+    container_name: typescript-chan
+    working_dir: /usr/share/typescript-chan
+
+    volumes:
+      - ./:/usr/share/typescript-chan
+
+    command: 'npm run start:prod'
